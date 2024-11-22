@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>2048 Game</title>
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <div class="scores-container">
+                <div class="score-box current-score">
+                    <div class="score-label">SCORE</div>
+                    <div id="score">0</div>
+                </div>
+                <div class="score-box best-score">
+                    <div class="score-label">BEST</div>
+                    <div id="best-score">0</div>
+                </div>
+            </div>
+            <button id="restart">New Game</button>
+        </div>
+        
+        <div class="grid-container">
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+        </div>
+
+        <div class="control-pad">
+            <div class="control-row">
+                <button class="control-btn" id="move-up" aria-label="Move Up">↑</button>
+            </div>
+            <div class="control-row">
+                <button class="control-btn" id="move-left" aria-label="Move Left">←</button>
+                <button class="control-btn" id="move-right" aria-label="Move Right">→</button>
+            </div>
+            <div class="control-row">
+                <button class="control-btn" id="move-down" aria-label="Move Down">↓</button>
+            </div>
+        </div>
+
+        <div class="high-scores">
+            <h2>High Scores</h2>
+            <ol id="high-scores-list">
+                <li class="no-scores">No scores yet!</li>
+            </ol>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
